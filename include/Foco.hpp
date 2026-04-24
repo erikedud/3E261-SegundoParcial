@@ -10,15 +10,18 @@ public:
 Foco() {
      this->encendido = "-";
 }
-~Foco() {}
+~Foco() {
+ this->encendido = "+";
+    }
+
 void Encender(){
-     this->encendido = "+";
+     this->encendido = "-";
 }
 void Apagar(){
      this->encendido = "-";
 }
- EstadoFoco LeerEstado(){
-     this->encendido = "-";
+  EstadoFoco LeerEstado(){
+        return this->encendido;
  }
 
-}
+};

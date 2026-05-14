@@ -30,8 +30,10 @@ cout<<"double"<<"= "<<sizeof(double*)<<endl;
 int* direccion;
 cout<<direccion<<endl;
 cout<<&direccion<<endl;
-
 cout<<*direccion<<endl;
 
+cout<<malloc(4)<<endl;
+
 return 0;
+
 }
